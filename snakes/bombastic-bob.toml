@@ -1,0 +1,14 @@
+name = "Bombastic Bob"
+slug = "bombastic-bob"
+repo = "https://github.com/coreyja/battlesnake-rs"
+dockerfile = "./Dockerfile"
+entrypoint = "bombastic-bob"
+port = 8000
+description = "Picks a random valid move that won't immediately kill him. Simple, unpredictable, surprisingly effective."
+
+[meta]
+author = "coreyja"
+strategy = "Random Reasonable"
+color = "#AA66CC"
+head = "trans-rights-scarf"
+tail = "default"

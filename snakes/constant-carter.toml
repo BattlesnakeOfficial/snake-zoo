@@ -1,0 +1,14 @@
+name = "Constant Carter"
+slug = "constant-carter"
+repo = "https://github.com/coreyja/battlesnake-rs"
+dockerfile = "./Dockerfile"
+entrypoint = "constant-carter"
+port = 8000
+description = "Always moves right. The ultimate baseline snake -- used for latency testing and benchmarking."
+
+[meta]
+author = "coreyja"
+strategy = "Always Right"
+color = "#AA66CC"
+head = "trans-rights-scarf"
+tail = "default"

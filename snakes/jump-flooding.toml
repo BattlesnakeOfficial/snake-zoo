@@ -1,0 +1,14 @@
+name = "Jump Flooding"
+slug = "jump-flooding"
+repo = "https://github.com/coreyja/battlesnake-rs"
+dockerfile = "./Dockerfile"
+entrypoint = "jump-flooding"
+port = 8000
+description = "Minimax with jump flooding algorithm for space evaluation. Maximizes the ratio of squares under its control."
+
+[meta]
+author = "coreyja"
+strategy = "Area Control"
+color = "#efae09"
+head = "trans-rights-scarf"
+tail = "default"

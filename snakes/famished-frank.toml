@@ -1,0 +1,14 @@
+name = "Famished Frank"
+slug = "famished-frank"
+repo = "https://github.com/coreyja/battlesnake-rs"
+dockerfile = "./Dockerfile"
+entrypoint = "famished-frank"
+port = 8000
+description = "Eats until enormous, then retreats to corners. Uses A* pathfinding to navigate around hazards."
+
+[meta]
+author = "coreyja"
+strategy = "Grow & Corner"
+color = "#FFBB33"
+head = "trans-rights-scarf"
+tail = "default"

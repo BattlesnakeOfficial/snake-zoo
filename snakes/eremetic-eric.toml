@@ -1,0 +1,14 @@
+name = "Eremetic Eric"
+slug = "eremetic-eric"
+repo = "https://github.com/coreyja/battlesnake-rs"
+dockerfile = "./Dockerfile"
+entrypoint = "eremetic-eric"
+port = 8000
+description = "The hermit snake. Chases his own tail in tight loops, only breaking formation to eat when starving."
+
+[meta]
+author = "coreyja"
+strategy = "Tail Chaser"
+color = "#FF4444"
+head = "trans-rights-scarf"
+tail = "default"

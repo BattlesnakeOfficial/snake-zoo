@@ -1,0 +1,14 @@
+name = "Amphibious Arthur"
+slug = "amphibious-arthur"
+repo = "https://github.com/coreyja/battlesnake-rs"
+dockerfile = "./Dockerfile"
+entrypoint = "amphibious-arthur"
+port = 8000
+description = "Simulates opponent sprawl and scores positions recursively. Keeps health around 80 and looks several moves ahead."
+
+[meta]
+author = "coreyja"
+strategy = "Recursive Simulation"
+color = "#AA66CC"
+head = "trans-rights-scarf"
+tail = "swirl"

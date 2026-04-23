@@ -1,0 +1,14 @@
+name = "Hovering Hobbs"
+slug = "hovering-hobbs"
+repo = "https://github.com/coreyja/battlesnake-rs"
+dockerfile = "./Dockerfile"
+entrypoint = "hovering-hobbs"
+port = 8000
+description = "Advanced paranoid minimax with flood fill scoring. Adapts strategy for arcade maze vs standard maps."
+
+[meta]
+author = "coreyja"
+strategy = "Minimax + Flood Fill"
+color = "#da8a1a"
+head = "beach-puffin-special"
+tail = "beach-puffin-special"

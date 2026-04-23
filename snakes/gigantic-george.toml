@@ -1,0 +1,14 @@
+name = "Gigantic George"
+slug = "gigantic-george"
+repo = "https://github.com/coreyja/battlesnake-rs"
+dockerfile = "./Dockerfile"
+entrypoint = "gigantic-george"
+port = 8000
+description = "Attempts to fill the entire board with a Hamiltonian path. Encodes the full route in shout messages."
+
+[meta]
+author = "coreyja"
+strategy = "Hamiltonian Path"
+color = "#FFBB33"
+head = "trans-rights-scarf"
+tail = "default"

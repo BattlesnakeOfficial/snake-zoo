@@ -1,0 +1,14 @@
+name = "Improbable Irene"
+slug = "improbable-irene"
+repo = "https://github.com/coreyja/battlesnake-rs"
+dockerfile = "./Dockerfile"
+entrypoint = "improbable-irene"
+port = 8000
+description = "Uses MCTS with UCB1-normal selection. Simulates thousands of random games to find the strongest move."
+
+[meta]
+author = "coreyja"
+strategy = "Monte Carlo Tree Search"
+color = "#5a25a8"
+head = "hydra"
+tail = "mystic-moon"

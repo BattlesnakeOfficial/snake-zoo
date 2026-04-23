@@ -1,0 +1,14 @@
+name = "Devious Devin"
+slug = "devious-devin"
+repo = "https://github.com/coreyja/battlesnake-rs"
+dockerfile = "./Dockerfile"
+entrypoint = "devious-devin"
+port = 8000
+description = "Assumes all opponents play optimally against him. Hunts food when short, stalks opponents when long."
+
+[meta]
+author = "coreyja"
+strategy = "Paranoid Minimax"
+color = "#99cc00"
+head = "trans-rights-scarf"
+tail = "rbc-necktie"
