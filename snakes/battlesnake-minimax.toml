@@ -1,0 +1,12 @@
+name = "POOOOOOOOOOOOOG"
+slug = "battlesnake-minimax"
+repo = "https://github.com/calvinl4/battlesnake-winter-2022"
+port = 8080
+description = "JavaScript minimax snake with alpha-beta pruning and A* pathfinding. Won first place at the RBC AI snake competition and reached Gold rank in Spring League 2021. Looks 5 moves ahead."
+
+[meta]
+author = "calvinl4"
+strategy = "Minimax + Alpha-Beta Pruning"
+color = "#ff00ff"
+head = "gamer"
+tail = "weight"

@@ -1,0 +1,10 @@
+name = "Nessegrev Flood"
+slug = "nessegrev-flood"
+repo = "https://github.com/Nettogrof/nessegrev-java-dev"
+port = 8082
+description = "Java snake using flood fill algorithm for area control. Supports both API v0 and v1. Part of the Nessegrev family."
+
+[meta]
+author = "Nettogrof"
+strategy = "Flood Fill"
+color = "#0066ff"

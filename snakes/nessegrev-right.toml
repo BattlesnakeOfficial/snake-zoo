@@ -1,0 +1,10 @@
+name = "Nessegrev Right"
+slug = "nessegrev-right"
+repo = "https://github.com/Nettogrof/nessegrev-java-dev"
+port = 8085
+description = "Novelty Java snake that can only turn right or go straight — never left. Surprisingly effective in some situations. Part of the Nessegrev family."
+
+[meta]
+author = "Nettogrof"
+strategy = "Right Turn Only"
+color = "#00cc00"

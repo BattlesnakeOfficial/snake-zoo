@@ -1,0 +1,10 @@
+name = "Nessegrev Expert"
+slug = "nessegrev-expert"
+repo = "https://github.com/Nettogrof/nessegrev-java-dev"
+port = 8084
+description = "Advanced Java snake with minimax/payoff matrix evaluation. Supports standard, squad, royale, and wrapped game modes. Part of the Nessegrev snake family — one of the most actively maintained community snakes (350+ commits). The repo also includes Basic, FloodFill, and Right (novelty: can only turn right) variants."
+
+[meta]
+author = "Nettogrof"
+strategy = "Minimax + Payoff Matrix"
+color = "#ff6600"
