@@ -5,7 +5,7 @@ mod run;
 
 use anyhow::{Result, bail};
 use clap::{Parser, Subcommand};
-use std::path::{Path, PathBuf};
+use std::path::PathBuf;
 
 #[derive(Parser)]
 #[command(
@@ -96,12 +96,7 @@ fn cmd_list(manifests: &[manifest::SnakeManifest]) -> Result<()> {
     Ok(())
 }
 
-fn cmd_run(
-    manifests: &[manifest::SnakeManifest],
-    names: &[String],
-    all: bool,
-    snakes_dir: &Path,
-) -> Result<()> {
+fn cmd_run(manifests: &[manifest::SnakeManifest], names: &[String], all: bool) -> Result<()> {
     if !all && names.is_empty() {
         bail!("specify at least one snake name, or use --all");
     }
@@ -131,7 +126,7 @@ fn cmd_run(
     // Collect owned copies for the run function
     let owned: Vec<manifest::SnakeManifest> = selected.into_iter().cloned().collect();
 
-    run::run(&owned, snakes_dir)
+    run::run(&owned)
 }
 
 fn main() -> Result<()> {
@@ -141,6 +136,6 @@ fn main() -> Result<()> {
 
     match &cli.command {
         Commands::List => cmd_list(&manifests),
-        Commands::Run { names, all } => cmd_run(&manifests, names, *all, &cli.snakes_dir),
+        Commands::Run { names, all } => cmd_run(&manifests, names, *all),
     }
 }

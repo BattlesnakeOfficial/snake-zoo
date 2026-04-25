@@ -22,6 +22,11 @@ snake-zoo run --all
 
 Requires Docker on PATH with the daemon running.
 
+Cloned snake repos are cached in your platform cache directory (e.g.
+`$XDG_CACHE_HOME/snake-zoo/repos` or `~/.cache/snake-zoo/repos` on Linux,
+`~/Library/Caches/snake-zoo/repos` on macOS), so the cache is shared across
+checkouts of this repo and isn't tied to your current working directory.
+
 ## Manifest Format
 
 Each snake is defined in a single TOML file under `snakes/`. The filename must match the snake's `slug` (e.g., `snakes/my-snake.toml` for a snake with `slug = "my-snake"`).

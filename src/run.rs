@@ -8,6 +8,17 @@ use std::process::Child;
 use std::sync::mpsc;
 use std::thread;
 
+/// Resolve the cache directory for cloned repos.
+///
+/// Uses the platform cache directory (XDG_CACHE_HOME on Linux, ~/Library/Caches on
+/// macOS, %LOCALAPPDATA% on Windows) so the clone cache is shared across checkouts
+/// of this repo rather than tied to the current working directory.
+fn cache_dir() -> Result<PathBuf> {
+    let base = dirs::cache_dir()
+        .context("could not determine cache directory (set XDG_CACHE_HOME or HOME on Linux)")?;
+    Ok(base.join("snake-zoo").join("repos"))
+}
+
 struct RunningSnake {
     slug: String,
     container_name: String,
@@ -217,9 +228,14 @@ fn cleanup(running_snakes: &[RunningSnake]) {
 }
 
 /// Main run orchestration: clone repos, build images, start containers, follow logs.
-pub fn run(snakes: &[SnakeManifest], snakes_dir: &Path) -> Result<()> {
-    let cache_dir = snakes_dir.join("../.cache/repos");
-    std::fs::create_dir_all(&cache_dir).context("failed to create cache directory")?;
+pub fn run(snakes: &[SnakeManifest]) -> Result<()> {
+    let cache_dir = cache_dir()?;
+    std::fs::create_dir_all(&cache_dir).with_context(|| {
+        format!(
+            "failed to create cache directory at {}",
+            cache_dir.display()
+        )
+    })?;
 
     // Phase 1: Clone/pull repos
     let repo_paths = clone_repos(snakes, &cache_dir)?;
