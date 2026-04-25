@@ -6,7 +6,21 @@ Clone this repo, and you get a diverse field of snakes ready to battle -- no hun
 
 ## Quick Start
 
-A CLI tool (`sz`) for building and running snakes from this manifest is coming soon. For now, this repo defines the snake manifest format and includes seed entries.
+```sh
+# Install (requires Rust toolchain)
+cargo install --path .
+
+# List available snakes
+snake-zoo list
+
+# Run specific snakes
+snake-zoo run amphibious-arthur bombastic-bob constant-carter
+
+# Run all snakes
+snake-zoo run --all
+```
+
+Requires Docker on PATH with the daemon running.
 
 ## Manifest Format
 
