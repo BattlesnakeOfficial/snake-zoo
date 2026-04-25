@@ -22,6 +22,8 @@ snake-zoo run --all
 
 Requires Docker on PATH with the daemon running.
 
+The snake manifests in `snakes/` are embedded into the binary at compile time, so the built `snake-zoo` binary is self-contained — once installed, it doesn't need this repo on disk to run.
+
 Cloned snake repos are cached in your platform cache directory (e.g.
 `$XDG_CACHE_HOME/snake-zoo/repos` or `~/.cache/snake-zoo/repos` on Linux,
 `~/Library/Caches/snake-zoo/repos` on macOS), so the cache is shared across

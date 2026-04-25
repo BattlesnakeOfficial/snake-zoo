@@ -5,7 +5,6 @@ mod run;
 
 use anyhow::{Result, bail};
 use clap::{Parser, Subcommand};
-use std::path::PathBuf;
 
 #[derive(Parser)]
 #[command(
@@ -13,10 +12,6 @@ use std::path::PathBuf;
     about = "Run Battlesnake opponents locally with Docker"
 )]
 struct Cli {
-    /// Path to the snakes directory
-    #[arg(long, default_value = "snakes")]
-    snakes_dir: PathBuf,
-
     #[command(subcommand)]
     command: Commands,
 }
@@ -132,7 +127,7 @@ fn cmd_run(manifests: &[manifest::SnakeManifest], names: &[String], all: bool) -
 fn main() -> Result<()> {
     let cli = Cli::parse();
 
-    let manifests = manifest::load_manifests(&cli.snakes_dir)?;
+    let manifests = manifest::load_manifests()?;
 
     match &cli.command {
         Commands::List => cmd_list(&manifests),
