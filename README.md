@@ -93,6 +93,8 @@ tail = "swirl"
 
 ## Included Snakes
 
+### battlesnake-rs (coreyja)
+
 | Name | Slug | Strategy |
 |------|------|----------|
 | Amphibious Arthur | `amphibious-arthur` | Recursive Simulation |
@@ -105,3 +107,17 @@ tail = "swirl"
 | Hovering Hobbs | `hovering-hobbs` | Minimax + Flood Fill |
 | Jump Flooding | `jump-flooding` | Area Control |
 | Improbable Irene | `improbable-irene` | Monte Carlo Tree Search |
+
+### Community Snakes
+
+| Name | Slug | Language | Strategy | Author |
+|------|------|----------|----------|--------|
+| Snork | `snork` | Rust | Minimax + Flood Fill | wrenger |
+| Untimely Neglected Wearable | `untimely-neglected-wearable` | Python | Rule-based + Flood Fill | altersaddle |
+| Nessegrev Expert | `nessegrev-expert` | Java | Minimax + Payoff Matrix | Nettogrof |
+| Nessegrev Flood | `nessegrev-flood` | Java | Flood Fill | Nettogrof |
+| Nessegrev Right | `nessegrev-right` | Java | Right Turn Only | Nettogrof |
+| The Very Hungry Caterpillar | `the-very-hungry-caterpillar` | C++ | Rule-based Pathfinding | TheApX |
+| POOOOOOOOOOOOOG | `battlesnake-minimax` | JavaScript | Minimax + Alpha-Beta Pruning | calvinl4 |
+| Robosnake | `robosnake` | Lua | Alpha-Beta Pruning | smallsco |
+| Snek | `snek` | Ruby | Heuristic Scoring | jhawthorn |

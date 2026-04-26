@@ -1,0 +1,12 @@
+name = "Untimely Neglected Wearable"
+slug = "untimely-neglected-wearable"
+repo = "https://github.com/altersaddle/untimely-neglected-wearable"
+port = 8080
+description = "Stateless, performant Python snake supporting all game modes. Flood fill for space evaluation, strategic food seeking, opponent trapping, hazard awareness, and wrapped mode support. 308+ commits of active development."
+
+[meta]
+author = "altersaddle"
+strategy = "Rule-based + Flood Fill"
+color = "#900050"
+head = "crystal-power"
+tail = "mystic-moon"
