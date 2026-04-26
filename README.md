@@ -6,7 +6,28 @@ Clone this repo, and you get a diverse field of snakes ready to battle -- no hun
 
 ## Quick Start
 
-A CLI tool (`sz`) for building and running snakes from this manifest is coming soon. For now, this repo defines the snake manifest format and includes seed entries.
+```sh
+# Install (requires Rust toolchain)
+cargo install --path .
+
+# List available snakes
+snake-zoo list
+
+# Run specific snakes
+snake-zoo run amphibious-arthur bombastic-bob constant-carter
+
+# Run all snakes
+snake-zoo run --all
+```
+
+Requires Docker on PATH with the daemon running.
+
+The snake manifests in `snakes/` are embedded into the binary at compile time, so the built `snake-zoo` binary is self-contained — once installed, it doesn't need this repo on disk to run.
+
+Cloned snake repos are cached in your platform cache directory (e.g.
+`$XDG_CACHE_HOME/snake-zoo/repos` or `~/.cache/snake-zoo/repos` on Linux,
+`~/Library/Caches/snake-zoo/repos` on macOS), so the cache is shared across
+checkouts of this repo and isn't tied to your current working directory.
 
 ## Manifest Format
 
