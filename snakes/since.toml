@@ -1,0 +1,13 @@
+name = "since"
+slug = "since"
+repo = "https://github.com/byte-the-bot/since"
+dockerfile = "./Dockerfile"
+port = 8000
+description = "Path-finding (A*) Battlesnake by Xe. Targets food when hungry, hunts smaller snakes when long, otherwise chases its own tail."
+
+[meta]
+author = "Xe"
+strategy = "A* Pathfinding"
+color = "#FFD600"
+head = "beluga"
+tail = "skinny"
