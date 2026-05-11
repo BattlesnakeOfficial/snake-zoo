@@ -1,0 +1,13 @@
+name = "qqqstuv BS 2017"
+slug = "qqqstuv-bs2017"
+repo = "https://github.com/byte-the-bot/BattleSnake-2017"
+dockerfile = "./Dockerfile"
+port = 8080
+description = "2017-era Python 2.7 Battlesnake by qqqstuv. A* + Dijkstra pathfinding with a strategy heatmap. Ported to v1 via a stdlib Python shim — original source unchanged."
+
+[meta]
+author = "qqqstuv"
+strategy = "A* + Dijkstra + heatmap"
+color = "#00FF00"
+head = "default"
+tail = "default"
