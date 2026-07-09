@@ -1,0 +1,13 @@
+name = "Snek"
+slug = "snek"
+repo = "https://github.com/jhawthorn/snek"
+dockerfile = "./Dockerfile"
+port = 3000
+description = "Ruby/Rails snake by jhawthorn (well-known Rails contributor). 267 commits of development with game history persistence. Has both a regular scorer and an ML-based scoring variant."
+
+[meta]
+author = "jhawthorn"
+strategy = "Heuristic Scoring"
+color = "#cc342d"
+head = "caffeine"
+tail = "bolt"

@@ -1,0 +1,13 @@
+name = "The Very Hungry Caterpillar"
+slug = "the-very-hungry-caterpillar"
+repo = "https://github.com/TheApX/battlesnake-hungry"
+dockerfile = "./Dockerfile"
+port = 8080
+description = "Rule-based C++ snake that avoids walls, avoids other snakes, and pathfinds to the closest food. Reached Gold on the Global Arena. Uses the battlesnake-engine-cpp library."
+
+[meta]
+author = "TheApX"
+strategy = "Rule-based Pathfinding"
+color = "#00ff00"
+head = "default"
+tail = "default"

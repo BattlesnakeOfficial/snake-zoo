@@ -1,0 +1,10 @@
+name = "Snork"
+slug = "snork"
+repo = "https://github.com/wrenger/snork"
+port = 5000
+description = "Fast Rust agents with minimax tree search, flood fill, and hyperparameter optimization. Reached 1st/2nd in global arenas; 2nd in Elite Division Winter Classic 2021. Has 6 agent types (Mobility, Tree, Flood, MonteCarlo, Solo, Random) — this entry runs the default Mobility agent."
+
+[meta]
+author = "wrenger"
+strategy = "Minimax + Flood Fill"
+color = "#4040b0"

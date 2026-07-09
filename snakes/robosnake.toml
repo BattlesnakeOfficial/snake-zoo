@@ -1,0 +1,11 @@
+name = "Robosnake"
+slug = "robosnake"
+repo = "https://github.com/smallsco/robosnake"
+dockerfile = "./Dockerfile"
+port = 80
+description = "Lua bounty snake running on OpenResty/nginx. Three years of iteration (2017-2019) as a Redbrick bounty snake, defeating many other bounty snakes. Uses alpha-beta pruning for 1v1 combat. A unique language choice in the Battlesnake ecosystem."
+
+[meta]
+author = "smallsco"
+strategy = "Alpha-Beta Pruning"
+color = "#ff0000"
