@@ -1,0 +1,13 @@
+name = "graeme-hill snakebot"
+slug = "graeme-hill-snakebot"
+repo = "https://github.com/byte-the-bot/snakebot"
+dockerfile = "./Dockerfile.v1"
+port = 5000
+description = "2018-era Battlesnake by Graeme Hill. Originally a C++ minimax engine (cpp_sim) loaded via node-gyp; this port runs the pure-JS 'hungry' strategy through a stdlib Node v1 API shim, so the image builds cleanly on ARM64 with no native compilation."
+
+[meta]
+author = "graeme-hill"
+strategy = "hungry (food-seeking) — cpp_sim minimax skipped to avoid node-gyp/ARM64 pain"
+color = "#00FFFF"
+head = "default"
+tail = "default"
