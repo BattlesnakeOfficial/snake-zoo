@@ -1,0 +1,14 @@
+name = "BS2019 Hannover"
+slug = "bs2019-hannover"
+repo = "https://github.com/coreyja-studio/battlesnake-2019"
+dockerfile = "./Dockerfile"
+entrypoint = "primary"
+port = 8000
+description = "2nd place Intermediate division, BattleSnake 2019. MaxN / Alpha-Beta game-tree search with locality-based opponent selection. Published as 'Adversarial N-player Search using Locality for the Game of Battlesnake'."
+
+[meta]
+author = "Schier, Schubert, Wuestenbecker (TNT Hannover)"
+strategy = "MaxN / Alpha-Beta search"
+color = "#1a3d6b"
+head = "default"
+tail = "default"

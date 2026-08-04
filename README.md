@@ -98,6 +98,7 @@ tail = "swirl"
 | Name | Slug | Strategy |
 |------|------|----------|
 | Amphibious Arthur | `amphibious-arthur` | Recursive Simulation |
+| BS2019 Hannover | `bs2019-hannover` | MaxN / Alpha-Beta search |
 | Bombastic Bob | `bombastic-bob` | Random Reasonable |
 | Constant Carter | `constant-carter` | Always Right |
 | Devious Devin | `devious-devin` | Paranoid Minimax |
