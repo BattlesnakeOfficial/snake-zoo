@@ -1,0 +1,12 @@
+name = "Shapeshifter"
+slug = "shapeshifter"
+repo = "https://github.com/byte-the-bot/shapeshifter"
+port = 8080
+description = "JonathanArns' legendary competitive snake — one of the strongest ever fielded in Battlesnake competitive play. Bitboard-based minimax with configurable features (MCTS variant also served under /mcts). Uses a fork because the upstream Dockerfile's ENTRYPOINT points at ./shapeshifter, which doesn't exist after cargo build --release (binary lands at target/release/shapeshifter); the fork fixes that one line. Expects the current official API payload shape (game.map, game.source)."
+
+[meta]
+author = "JonathanArns"
+strategy = "Bitboard Minimax (+ MCTS)"
+color = "#900050"
+head = "cosmic-horror-special"
+tail = "cosmic-horror"

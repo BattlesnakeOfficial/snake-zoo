@@ -121,3 +121,4 @@ tail = "swirl"
 | POOOOOOOOOOOOOG | `battlesnake-minimax` | JavaScript | Minimax + Alpha-Beta Pruning | calvinl4 |
 | Robosnake | `robosnake` | Lua | Alpha-Beta Pruning | smallsco |
 | Snek | `snek` | Ruby | Heuristic Scoring | jhawthorn |
+| Shapeshifter | `shapeshifter` | Rust | Bitboard Minimax (+ MCTS) | JonathanArns |
